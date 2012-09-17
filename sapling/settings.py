@@ -100,6 +100,8 @@ STATICFILES_STORAGE = 'staticfiles.storage.CachedStaticFilesStorage'
 # STATIC_URL followed by 'admin/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
+REGISTRATION_BACKEND = 'sapling.users.registration_backend.SaplingBackend'
+
 AUTHENTICATION_BACKENDS = (
     'sapling.users.backends.CaseInsensitiveModelBackend',
     'sapling.users.backends.RestrictiveBackend',
